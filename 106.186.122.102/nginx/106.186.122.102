@@ -1,0 +1,11 @@
+server {
+	root /srv/http/106.186.122.102;
+    autoindex on;
+	index  index.htm index.html;
+	server_name  106.186.122.102;
+
+    access_log  /tmp/106.186.122.102_access.log;
+    error_log  /tmp/106.186.122.102_error.log;
+
+    error_page   404          404.pac;
+}

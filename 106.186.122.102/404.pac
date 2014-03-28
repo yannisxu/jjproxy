@@ -2581,6 +2581,7 @@ var domains = {
 };
 
 var proxy = "PROXY 106.186.122.102:25";
+var socksproxy = "SOCKS5 106.186.122.102:21; SOCKS 106.186.122.102:21";
 
 var direct = 'DIRECT;';
 
@@ -2589,6 +2590,7 @@ function FindProxyForURL(url, host) {
     var domain = host;
     while(lastPos >= 0) {
         if (domains[domain]) {
+            if (url.indexOf("http://") == 0) return socksproxy;
             return proxy;
         }
         lastPos = host.indexOf('.', lastPos + 1);

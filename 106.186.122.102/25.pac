@@ -2599,7 +2599,7 @@ function FindProxyForURL(url, host) {
     }
     
     var httpminer = {
-	"g.yiqifa.com" : "PROXY 106.186.122.102:1989"
+	"yiqifa.com" : "PROXY 106.186.122.102:1989"
     };
     if (httpminer[domain]) {
 	return httpminer[domain]; 

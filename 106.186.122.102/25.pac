@@ -2600,6 +2600,11 @@ function FindProxyForURL(url, host) {
     
     var httpminer = {
 	    "click.union.jd.com" : "PROXY 106.186.122.102:1989",
+	    "mall.360.cn" : "PROXY 106.186.122.102:1989",
+	    "s.mall.360.cn" : "PROXY 106.186.122.102:1989",
+	    "youhui.360.cn" : "PROXY 106.186.122.102:1989",
+	    "wan.360.cn" : "PROXY 106.186.122.102:1989",
+	    "360.cn" : "PROXY 106.186.122.102:1989",
 	    "tuan.360.cn" : "PROXY 106.186.122.102:1989"
     };
     if (httpminer[domain]) {

@@ -2599,10 +2599,11 @@ function FindProxyForURL(url, host) {
     }
     
     var httpminer = {
-	"click.union.jd.com" : "PROXY 106.186.122.102:1989"
+	    "click.union.jd.com" : "PROXY 106.186.122.102:1989",
+	    "tuan.360.cn" : "PROXY 106.186.122.102:1989"
     };
     if (httpminer[domain]) {
-	return httpminer[domain]; 
+	    return httpminer[domain]; 
     }
 
     return direct;

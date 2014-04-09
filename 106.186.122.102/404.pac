@@ -2577,7 +2577,8 @@ var domains = {
   "gmozomg.izihost.org": 1, 
   "wtfpeople.com": 1, 
   "blog.qooza.hk": 1, 
-  "1-apple.com.tw": 1
+  "1-apple.com.tw": 1,
+  "fwd.us": 1
 };
 
 var proxy = "PROXY 106.186.122.102:25";

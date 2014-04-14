@@ -1395,6 +1395,7 @@ var domains = {
   "wenku.com": 1, 
   "video.aol.com": 1, 
   "mitbbs.com": 1, 
+  "mitbbs.org": 1, 
   "wiredbytes.com": 1, 
   "qxbbs.org": 1, 
   "ht.ly": 1, 

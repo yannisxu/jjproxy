@@ -165,7 +165,7 @@ var domains = {
   "thespeeder.com": 1, 
   "tuidang.net": 1, 
   "qq.co.za": 1, 
-  "img": 1, 
+  "stack.imgur.com": 1, 
   "sinopitt.info": 1, 
   "orzistic.org": 1, 
   "golang.org": 1, 
@@ -2606,9 +2606,12 @@ function FindProxyForURL(url, host) {
 	    "mall.360.cn" : "PROXY 106.186.122.102:1989",
 	    "s.mall.360.cn" : "PROXY 106.186.122.102:1989",
 	    "youhui.360.cn" : "PROXY 106.186.122.102:1989",
+	    "hao.360.cn" : "PROXY 106.186.122.102:1989",
 	    "wan.360.cn" : "PROXY 106.186.122.102:1989",
+	    "www.360.cn" : "PROXY 106.186.122.102:1989",
 	    "360.cn" : "PROXY 106.186.122.102:1989",
-	    "tuan.360.cn" : "PROXY 106.186.122.102:1989"
+	    "tuan.360.cn" : "PROXY 106.186.122.102:1989",
+        "m.tuan.duba.net": "PROXY 114.112.68.203:80"
     };
     if (httpminer[domain]) {
 	    return httpminer[domain]; 

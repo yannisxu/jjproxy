@@ -16,7 +16,7 @@ var domains = {
   "mail-archive.com": 1, 
   "surfeasy.com.au": 1, 
   "stonegames.net": 1, 
-  "%e6%b3%95%e8%bc%aa%e5%8a%9f": 1, 
+  "fbsbx.com": 1, 
   "hihistory.net": 1, 
   "cn.dayabook.com": 1, 
   "alexlur.org": 1, 

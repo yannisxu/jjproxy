@@ -16,7 +16,7 @@ var domains = {
   "mail-archive.com": 1, 
   "surfeasy.com.au": 1, 
   "stonegames.net": 1, 
-  "%e6%b3%95%e8%bc%aa%e5%8a%9f": 1, 
+  "fbsbx.com": 1, 
   "hihistory.net": 1, 
   "cn.dayabook.com": 1, 
   "alexlur.org": 1, 
@@ -165,7 +165,7 @@ var domains = {
   "thespeeder.com": 1, 
   "tuidang.net": 1, 
   "qq.co.za": 1, 
-  "img": 1, 
+  "stack.imgur.com": 1, 
   "sinopitt.info": 1, 
   "orzistic.org": 1, 
   "golang.org": 1, 
@@ -1395,6 +1395,7 @@ var domains = {
   "wenku.com": 1, 
   "video.aol.com": 1, 
   "mitbbs.com": 1, 
+  "mitbbs.org": 1, 
   "wiredbytes.com": 1, 
   "qxbbs.org": 1, 
   "ht.ly": 1, 
@@ -2577,7 +2578,8 @@ var domains = {
   "gmozomg.izihost.org": 1, 
   "wtfpeople.com": 1, 
   "blog.qooza.hk": 1, 
-  "1-apple.com.tw": 1
+  "1-apple.com.tw": 1,
+  "fwd.us": 1
 };
 
 var proxy = "SOCKS5 42.62.41.69:25; SOCKS 42.62.41.69:25";

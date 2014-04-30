@@ -11,6 +11,7 @@ var domains = {
   "gongm.in": 1, 
   "joachims.org": 1, 
   "maiio.net": 1, 
+  "movies.mxn.com": 1, 
   "m.slandr.net": 1, 
   "idv.tw": 1, 
   "mail-archive.com": 1, 
@@ -2569,7 +2570,7 @@ var domains = {
   "fwd.us": 1
 };
 
-var proxy = "PROXY 106.186.122.102:25";
+var proxy = "PROXY 106.186.122.102:20";
 
 var direct = 'DIRECT;';
 

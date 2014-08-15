@@ -1,33 +1,75 @@
 本项目主要目的是利用GFW漏洞，为PC和iOS设备提供一个最为便捷(但依赖个人服务器)的一个翻墙代理方案。以黑名单的方式记录需要代理的网站列表，最小化代理服务器的压力。
 
-<h3>使用方法</h3>
+<h2>使用方法</h2>
 
+<h4> PAC </h4>
+<div> 
+<a href="http://nav.liruqi.info/gfw.pac">http://nav.liruqi.info/gfw.pac</a>
+</div> 
+
+<h4> Windows </h4> 
+<div> Internet选项 -> 连接 选项卡 -> 局域网设置(如果是电脑拨号上网, 这里点'设置') -> 使用自动配置脚本 -> 填入脚本地址: http://nav.liruqi.info/gfw.pac -> 确定</div>
+
+<h4> iOS (iPhone/iPad) </h4> 
+<h5>Wifi</h5>
+<div>
 <ul>
 <li>
-PAC: <a href="http://nav.liruqi.info/gfw.pac">http://nav.liruqi.info/gfw.pac</a>
-</li>
-<li> <a href="iOS.html">iPhone/iPad 教程</a> </li>
-<li> <a href="MacOSX.html">Mac OS X 教程</a> </li>
-<li> Windows: Internet选项 -> 连接 选项卡 -> 局域网设置(如果是电脑拨号上网, 这里点'设置') -> 使用自动配置脚本 -> 填入脚本地址: http://nav.liruqi.info/gfw.pac -> 确定</li> 
-<li>
-不建议使用全局代理，国内速度慢，流量大了可能会禁止代理国内网站
+打开设置, 选择Wi-Fi
+<a href="res/1.png"><img width="64" height="114"  src="res/1.png" />
+</a>
 </li>
 <li>
-国内无需密码即可访问。非大陆用户可能会提示输入用户名密码: nine/passwords
+选择当前使用的热点
+<a href="res/2.png">
+<img width="64" height="114" src="res/2.png" />
+</a>
+</li>
+<li>
+拖到最下面的代理设置，选择"自动"，填写PAC地址: 
+ <a href="http://nav.liruqi.info/gfw.pac">http://nav.liruqi.info/gfw.pac</a>
+
+<a href="res/3.png">
+<img width="64" height="114" src="res/3.png" />
+</a>
+</li>
+</ul>
+
+<h5>3G</h5>
+<p>3G网络比较麻烦，推荐使用<a href="https://itunes.apple.com/us/app/shadowsocks/id665729974">shadowsocks</a>客户端，内置shadowsocks代理（可能需要把App store 账号切换到美国区才能下载）</p>
+</div>
+
+
+<h4> Mac OS X 教程 </h4> 
+<ul>
+<li>
+<a href="res/mac1.png"><img src="res/mac1.png" />
+</a>
+</li>
+<li>
+<a href="res/mac2.png"><img  src="res/mac2.png" />
+</a>
+</li>
+<li>
+<a href="res/mac3.png"><img src="res/mac3.png" />
+</a>
+填写PAC地址: <a href="http://nav.liruqi.info/gfw.pac">http://nav.liruqi.info/gfw.pac</a>
 </li>
 </ul>
 
 
-<p>
-如果希望在本页面列出个人的代理服务器，请fork本项目并加入相关配置信息，再发pull request。
-</p>
+<h4> 其它 </h4>
+上面介绍的是设置系统级代理。有些软件支持代理设置(典型的是 Firefox)，可以在应用内设置 PAC，而不影响其它软件。还有少数软件会忽略系统代理设置。 
+<li>
+Android 上只能设置全局代理。不建议这么使用，流量大了可能会禁止代理访问国内网站。
+</li>
+</ul>
 
 <p>
-直接给<a href="mailto:liruqi@gmail.com">我</a>发邮件亦可。
+如果希望在本页面列出个人的代理服务器，请fork本项目并加入相关配置信息，再发pull request。直接给<a href="mailto:liruqi@gmail.com">我</a>发邮件亦可。
 </p>
 
-<h3>其它代理方案推荐</h3>
-本项目局限性在于依赖系统代理。有些应用如Facebook iOS app，不走系统代理。遇到这种问题，可以选择其它更底层的网络代理:
+<h2>其它代理方案推荐</h2>
 <ul>
 <li>
 <a href="http://www.vpngate.net/">VPN Gate</a>: 公共VPN中继服务器, 支持多个VPN协议。
@@ -40,9 +82,3 @@ PAC: <a href="http://nav.liruqi.info/gfw.pac">http://nav.liruqi.info/gfw.pac</a>
 </li>
 </ul>
 
-<h3>TODO</h3>
-<ul>
-<li>
-Improve pac, grab blocked websites from https://en.greatfire.org, https://en.greatfire.org/search/ip-addresses
-</li>
-</ul>

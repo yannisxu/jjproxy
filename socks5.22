@@ -2579,7 +2579,7 @@ var domains = {
   "fwd.us": 1
 };
 
-var proxy = "SOCKS5 106.186.23.182:22;SOCKS 106.186.23.182:22";
+var proxy = "SOCKS5 ns.liruqi.info:22;SOCKS ns.liruqi.info:22";
 
 var direct = 'DIRECT;';
 
@@ -2589,7 +2589,7 @@ function FindProxyForURL(url, host) {
     while(lastPos >= 0) {
 	if (domain == "360.cn")
 	    if (url.indexOf('http://') == 0)
-	    	return "PROXY 106.186.23.182:80";
+	    	return "PROXY ns.liruqi.info:80";
 
         if (domains[domain]) {
             if (domains[domain] == 'http')

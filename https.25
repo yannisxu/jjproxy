@@ -2579,7 +2579,7 @@ var domains = {
   "fwd.us": 1
 };
 
-var proxy = "PROXY ns.liruqi.info:22;";
+var proxy = "PROXY ns.liruqi.info:25;";
 
 var direct = 'DIRECT;';
 

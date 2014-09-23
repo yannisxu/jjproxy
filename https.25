@@ -2576,7 +2576,8 @@ var domains = {
   "wtfpeople.com": 1, 
   "blog.qooza.hk": 1, 
   "1-apple.com.tw": 1,
-  "fwd.us": 1
+  "fwd.us": 1,
+  "duckduckgo.com": 1,
 };
 
 var proxy = "PROXY ns.liruqi.info:25;";

@@ -17,6 +17,7 @@ var domains = {
   "movies.mxn.com": 1, 
   "m.slandr.net": 1, 
   "idv.tw": 1, 
+  "instagram.com": 1,
   "mail-archive.com": 1, 
   "surfeasy.com.au": 1, 
   "stonegames.net": 1, 

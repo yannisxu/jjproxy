@@ -7,6 +7,7 @@ var domains = {
   "gimpshop.com": 1, 
   "android.com": 1, 
   "directcreative.com": 1, 
+  "themefuse.com": 1,
   "speedpluss.org": 1, 
   "mingpaovan.com": 1, 
   "kineox.free.fr": 1, 
@@ -17,6 +18,7 @@ var domains = {
   "movies.mxn.com": 1, 
   "m.slandr.net": 1, 
   "idv.tw": 1, 
+  "instagram.com": 1,
   "mail-archive.com": 1, 
   "surfeasy.com.au": 1, 
   "stonegames.net": 1, 
@@ -2576,10 +2578,11 @@ var domains = {
   "wtfpeople.com": 1, 
   "blog.qooza.hk": 1, 
   "1-apple.com.tw": 1,
-  "fwd.us": 1
+  "fwd.us": 1,
+  "duckduckgo.com": 1
 };
 
-var proxy = "SOCKS5 ns.liruqi.info:22;SOCKS ns.liruqi.info:22";
+var proxy = "SOCKS5 ns.liruqi.info:21;SOCKS ns.liruqi.info:21";
 
 var direct = 'DIRECT;';
 

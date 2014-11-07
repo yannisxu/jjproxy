@@ -1,68 +1,90 @@
-本项目主要目的是利用GFW漏洞，为PC和iOS设备提供一个最为便捷(但依赖个人服务器)的一个翻墙代理方案。以黑名单的方式记录需要代理的网站列表，最小化代理服务器的压力。
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-<h2>使用方法</h2>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-<h4> PAC地址 </h4>
-<div> 
-<a href="https://liruqi.github.io/jjproxy/socks5.21">http://106.186.122.102/25.pac</a> 此PAC地址已经实效，仅用于展示案例。可以给<a href="mailto:liruqi@gmail.com">我</a>发邮件索取。
-</div> 
+    <title>jjproxy by liruqi</title>
+  </head>
 
-<h4> Windows </h4> 
-<div> Internet选项 -> 连接 选项卡 -> 局域网设置(如果是电脑拨号上网, 这里点'设置') -> 使用自动配置脚本 -> 填入PAC地址 -> 确定</div>
+  <body>
 
+    <header>
+      <div class="container">
+        <h1>jjproxy</h1>
+        <h2>A proxy to bypass GFW with minimal cost</h2>
 
-<h4> Mac OS X </h4> 
-<div> 系统设置 -> 网络 -> 高级 -> 代理 -> 自动代理配置 -> URL中填入PAC地址 -> 好</div>
+        <section id="downloads">
+          <a href="https://github.com/liruqi/jjproxy/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/liruqi/jjproxy/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/liruqi/jjproxy" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
-<h4> iOS (iPhone/iPad) </h4> 
-<h5>Wifi</h5>
-<div>
-<ul>
-<li>
-打开设置, 选择Wi-Fi
-<a href="res/1.png"><img width="64" height="114"  src="res/1.png" />
-</a>
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a id="jjproxy" class="anchor" href="#jjproxy" aria-hidden="true"><span class="octicon octicon-link"></span></a>jjproxy</h3>
+
+<p>轻量级的翻墙工具，不需要安装客户端。可以设置系统代理，也可以设置浏览器代理或者配合插件使用。</p>
+
+<h3>
+<a id="pac地址" class="anchor" href="#pac%E5%9C%B0%E5%9D%80" aria-hidden="true"><span class="octicon octicon-link"></span></a>PAC地址</h3>
+
+<p><a href="https://liruqi.github.io/jjproxy/socks5.21">https://liruqi.github.io/jjproxy/socks5.21</a> 
+公共代理，走 tor 网络，速度比较慢。可以发邮件至 <a href="mailto:liruqi@gmail.com">liruqi@gmail.com</a> 购买高速代理，64人民币一年。</p>
+
+<h3>
+<a id="使用方法" class="anchor" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用方法</h3>
+
+<p>先介绍一下设置各个系统代理的方法。</p>
+
+<h2>
+<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h2>
+
+<p>Internet选项 -&gt; 连接 选项卡 -&gt; 局域网设置(如果是电脑拨号上网, 这里点'设置') -&gt; 使用自动配置脚本 -&gt; 填入PAC地址 -&gt; 确定</p>
+
+<h2>
+<a id="mac-os-x" class="anchor" href="#mac-os-x" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mac OS X</h2>
+
+<p>系统设置 -&gt; 网络 -&gt; 高级 -&gt; 代理 -&gt; 自动代理配置 -&gt; URL中填入PAC地址 -&gt; 好</p>
+
+<h2>
+<a id="ios-iphoneipad" class="anchor" href="#ios-iphoneipad" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS (iPhone/iPad)</h2>
+
+<ol>
+<li>打开设置, 选择Wi-Fi </li>
+<li>选择当前使用的热点<br>
 </li>
-<li>
-选择当前使用的热点
-<a href="res/2.png">
-<img width="64" height="114" src="res/2.png" />
-</a>
+<li>拖到最下面的代理设置，选择"自动"，填写PAC地址。 
+<img src="http://liruqi.github.io/jjproxy/res/1.png" alt="1">
+<img src="http://liruqi.github.io/jjproxy/res/2.png" alt="2">
+<img src="http://liruqi.github.io/jjproxy/res/3.png" alt="3">
 </li>
-<li>
-拖到最下面的代理设置，选择"自动"，填写PAC地址: 
- <a href="https://liruqi.github.io/jjproxy/socks5.21">http://106.186.122.102/25.pac</a>
+</ol>
 
-<a href="res/3.png">
-<img width="64" height="114" src="res/3.png" />
-</a>
-</li>
-</ul>
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<h5>3G</h5>
-<p>3G网络比较麻烦，推荐使用<a href="https://itunes.apple.com/us/app/shadowsocks/id665729974">shadowsocks</a>客户端，内置shadowsocks代理（可能需要把App store 账号切换到美国区才能下载）</p>
-</div>
-<h4> 其它 </h4>
-上面介绍的是设置系统级代理。有些软件支持代理设置(典型的是 Firefox)，可以在应用内设置 PAC，而不影响其它软件。还有少数软件会忽略系统代理设置。 
-<li>
-Android 系统代理设置一般只能设全局代理。可以安装<a href="https://play.google.com/store/apps/details?id=org.sandroproxy.drony" target="_blank">Drony</a> 使用 PAC。
-</li>
-</ul>
+<p><a href="mailto:liruqi@gmail.com">liruqi@gmail.com</a></p>
+      </section>
+    </div>
 
-<p>
-如果希望在本页面列出个人的代理服务器，请fork本项目并加入相关配置信息，再发pull request。直接给<a href="mailto:liruqi@gmail.com">我</a>发邮件亦可。
-</p>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-7404902-15");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-<h2>其它代理方案推荐</h2>
-<ul>
-<li>
-<a href="http://www.vpngate.net/">VPN Gate</a>: 公共VPN中继服务器, 支持多个VPN协议。
-</li>
-<li>
-<a href="http://fqrouter.com/">fqrouter</a>: 目前主要在做Android 平台的系统代理以及无线中继(只有一部分Android设备支持中继模式)。
-</li>
-<li>
-<a href="https://shadowsocks.com/">shadowsocks</a>: 一个加密的 socks5 代理隧道，网站可以购买付费服务。<a href="https://www.shadowsocks.net/">shadowsocks.net</a>上可以免费领取网友分享的账号。
-</li>
-</ul>
-
+  </body>
+</html>

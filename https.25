@@ -2582,7 +2582,7 @@ var domains = {
   "duckduckgo.com": 1
 };
 
-var proxy = "SOCKS5 106.185.28.251:25;SOCKS 106.185.28.251:25; PROXY ns.liruqi.info:25;";
+var proxy = "PROXY ns.liruqi.info:21;";
 
 var direct = 'DIRECT;';
 

@@ -1030,6 +1030,7 @@ var domains = {
   "kui.name": 1, 
   "dabr.me": 1, 
   "yyii.org": 1, 
+  "yyets.com": 1, 
   "proxy.org": 1, 
   "thomasbernhard.org": 1, 
   "itweet.net": 1, 
@@ -2603,7 +2604,6 @@ function FindProxyForURL(url, host) {
         lastPos = host.indexOf('.', lastPos + 1);
         domain = host.slice(lastPos + 1);
     }
-    
 
     return direct;
 }

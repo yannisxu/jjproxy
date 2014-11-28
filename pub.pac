@@ -7,6 +7,7 @@ var domains = {
   "gimpshop.com": 1, 
   "android.com": 1, 
   "directcreative.com": 1, 
+  "digicert.com": 1, 
   "themefuse.com": 1,
   "speedpluss.org": 1, 
   "mingpaovan.com": 1, 
@@ -1030,6 +1031,7 @@ var domains = {
   "kui.name": 1, 
   "dabr.me": 1, 
   "yyii.org": 1, 
+  "yyets.com": 1, 
   "proxy.org": 1, 
   "thomasbernhard.org": 1, 
   "itweet.net": 1, 
@@ -2603,7 +2605,6 @@ function FindProxyForURL(url, host) {
         lastPos = host.indexOf('.', lastPos + 1);
         domain = host.slice(lastPos + 1);
     }
-    
 
     return direct;
 }

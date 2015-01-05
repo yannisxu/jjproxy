@@ -2417,6 +2417,7 @@ var domains = {
   "199.59.148.20": 1, 
   "twittercounter.com": 1, 
   "git-scm.com": 1, 
+  "github.com": 1, 
   "renminbao.com": 1, 
   "inmediahk.net": 1, 
   "aliengu.com": 1, 

@@ -152,7 +152,6 @@ var domains = {
   "chinaaid.org": 1, 
   "internetfreedom.org": 1, 
   "fc2.com": 1, 
-  "google.co.hk": 1, 
   "taolun.info": 1, 
   "bestforchina.org": 1, 
   "m-team.cc": 1, 

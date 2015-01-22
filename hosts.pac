@@ -12,6 +12,9 @@ function FindProxyForURL(url, host) {
         if (domain == "googlevideo.com") {
             return proxy;
         }
+        if (domain == "t.co") {
+            return proxy;
+        }
         lastPos = host.indexOf('.', lastPos + 1);
         domain = host.slice(lastPos + 1);
     }

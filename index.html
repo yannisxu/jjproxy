@@ -34,9 +34,16 @@
 <p>轻量级的翻墙工具，不需要安装客户端。可以设置系统代理，也可以设置浏览器代理或者配合插件使用。</p>
 
 <h2>购买</h2>
-<p>目前的服务器搭建在 <a href="https://www.linode.com/?r=cc93760c5a1b11a4d9c06ecfa4483bcce3d8f1e1">Linode</a>上。</p>
 
-<p>PAC + Shadowsocks 代理，64人民币一年; 10人民币一月。PAC 和 Shadowsocks 可用于不同的平台，但是不能(也没有必要)同时使用。PAC 设置便捷，Shadowsocks 安全性和可靠性更高。</p>
+提供三个可选方案：
+<table> 
+<tr> <td>PAC + Shadowsocks</td> <td>1个月</td> <td>8人民币</td> </tr>
+<tr> <td>PAC + Shadowsocks</td> <td>1年</td> <td>64人民币</td> </tr>
+<tr> <td>PAC + Shadowsocks + PPTP VPN</td> <td>1年</td> <td>128人民币</td> </tr>
+</table> 
+<p>PAC 和 Shadowsocks、VPN 可用于不同的平台，但是不能(也没有必要)同时使用。PAC 设置便捷，Shadowsocks/VPN 安全性和可靠性更高。</p>
+
+<p>目前的服务器搭建在 <a href="https://www.linode.com/?r=cc93760c5a1b11a4d9c06ecfa4483bcce3d8f1e1">Linode</a> 东京节点。</p>
 
 <p>支付宝扫下面的二维码付款，付款时请告知邮箱，到账之后我会在12小时内发送代理配置信息。</p>
 
@@ -45,12 +52,12 @@
 <h2>
 <a id="PAC" class="anchor" href="#PAC" aria-hidden="true"><span class="octicon octicon-link"></span></a>PAC代理</h2>
 
-<p>公共代理地址<b>https://liruqi.github.io/jjproxy/pub.pac</b> 可以试用。购买后会另外分配PAC代理地址。 </p> 
+<p>平台支持：Windows / Mac OS X / Linux / iOS (iPhone/iPad)</p>
+
+<p>公共代理地址 <b>https://liruqi.github.io/jjproxy/pub.pac</b> 可以试用。购买后会另外分配PAC代理地址。 </p> 
 
 <h3>
 <a id="windows" class="anchor" href="#windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h3>
-
-<p>平台支持：Windows / Mac OS X / Linux / iOS(Wi-Fi) </p>
 
 <p>Internet选项 -&gt; 连接 选项卡 -&gt; 局域网设置(如果是电脑拨号上网, 这里点'设置') -&gt; 使用自动配置脚本 -&gt; 填入PAC地址 -&gt; 确定</p>
 
@@ -60,7 +67,7 @@
 <p>系统设置 -&gt; 网络 -&gt; 高级 -&gt; 代理 -&gt; 自动代理配置 -&gt; URL中填入PAC地址 -&gt; 好</p>
 
 <h3>
-<a id="ios-iphoneipad" class="anchor" href="#ios-iphoneipad" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS (iPhone/iPad)</h3>
+<a id="ios-wifi" class="anchor" href="#ios-wifi" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS + Wi-Fi</h3>
 
 <ol>
 <li>打开设置, 选择Wi-Fi (<a href="http://liruqi.github.io/jjproxy/res/1.png">图</a>)</li>
@@ -68,15 +75,23 @@
 <li>拖到最下面的代理设置，选择"自动"，填写PAC地址 (<a href="http://liruqi.github.io/jjproxy/res/3.png">图</a>)</li>
 </ol>
 
+<h2>PPTP VPN</h2>
+<h3>
+<a id="ios-3g" class="anchor" href="#ios-wifi" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS (iPhone/iPad) + 3G</h3>
+
+<p>
+设置 PPTP VPN，然后启用即可。
+</p>
+
 <h2>
 <a id="Shadowsocks" class="anchor" href="#Shadowsocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shadowsocks</h2>
 <p>平台支持：Windows / Mac OS X / Linux / Android </p>
 <p>请先下载<a href="https://github.com/shadowsocks/shadowsocks/wiki/Ports-and-Clients">客户端</a>。然后参考<a href="https://github.com/shadowsocks/shadowsocks">Shadowsocks</a>项目的使用文档</p>
-
+<p>不建议 iOS 用户为了用 Shadowsocks 而越狱，越狱有风险。推荐使用上面介绍的 PAC 或 VPN 设置。</p>
 <h2>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>技术支持</h2>
 
-<p>Mail me: <a href="mailto:liruqi@gmail.com">liruqi@gmail.com</a></p>
+<p>Email: <a href="mailto:liruqi@gmail.com">liruqi@gmail.com</a> 或者 QQ: 252537386</p>
       </section>
     </div>
 

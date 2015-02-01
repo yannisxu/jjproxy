@@ -2564,7 +2564,7 @@ function FindProxyForURL(url, host) {
         if (suffix == "360.cn")
             if (url.indexOf('http://') == 0)
                 return "PROXY ns.liruqi.info:80";
-        pos = host.lastIndexOf('.', pos + 1);
+        pos = host.indexOf('.', pos + 1);
         suffix = host.substring(pos + 1);
     }
 }

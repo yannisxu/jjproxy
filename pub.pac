@@ -2553,18 +2553,25 @@ var direct = 'DIRECT;';
 var hasOwnProperty = Object.hasOwnProperty;
 
 function FindProxyForURL(url, host) {
+    if (host == "mail.google.com") {
+        return "PROXY 104.224.161.30:25";
+    }
+
     var suffix;
     var pos = host.lastIndexOf('.');
     while(1) {
+        suffix = host.substring(pos + 1);
         if (suffix == "360.cn")
             if (url.indexOf('http://') == 0)
                 return "PROXY ns.liruqi.info:80";
-        suffix = host.substring(pos + 1);
         if (hasOwnProperty.call(domains, suffix)) {
             return proxy;
         }
-        if (pos <= 0) break;
+        if (pos <= 0) {
+            break;
+        }
         pos = host.lastIndexOf('.', pos - 1);
     }
+    return direct;
 }
 

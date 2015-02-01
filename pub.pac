@@ -2555,7 +2555,6 @@ var hasOwnProperty = Object.hasOwnProperty;
 function FindProxyForURL(url, host) {
     var suffix;
     var pos = host.lastIndexOf('.');
-    pos = host.lastIndexOf('.', pos - 1);
     while(1) {
         if (suffix == "360.cn")
             if (url.indexOf('http://') == 0)

@@ -123,6 +123,7 @@ var domains = {
   "apigee.com": 1, 
   "appledaily.com": 1, 
   "appspot.com": 1, 
+  "archeage.com": 1, 
   "archive.is": 1, 
   "archive.org": 1, 
   "arctosia.com": 1, 
@@ -822,6 +823,7 @@ var domains = {
   "goodreads.com": 1, 
   "goofind.com": 1, 
   "google-analytics.com": 1, 
+  "google.cn": 1, 
   "google.co.jp": 1, 
   "google.com": 1, 
   "googleadservices.com": 1, 
@@ -1383,6 +1385,7 @@ var domains = {
   "ncn.org": 1, 
   "ncol.com": 1, 
   "nde.de": 1, 
+  "ndoors.com": 1, 
   "ndr.de": 1, 
   "ned.org": 1, 
   "neighborhoodr.com": 1, 
@@ -2436,6 +2439,7 @@ var domains = {
   "xinyubbs.net": 1, 
   "xizang-zhiye.org": 1, 
   "xjp.cc": 1, 
+  "xlgames.com": 1, 
   "xml-training-guide.com": 1, 
   "xmovies.com": 1, 
   "xmusic.fm": 1, 
@@ -2549,24 +2553,18 @@ var direct = 'DIRECT;';
 var hasOwnProperty = Object.hasOwnProperty;
 
 function FindProxyForURL(url, host) {
-    var suffix;
-    var pos = host.lastIndexOf('.');
-    pos = host.lastIndexOf('.', pos - 1);
-    while(1) {
-        if (pos <= 0) {
-            if (hasOwnProperty.call(domains, host)) {
-                return proxy;
-            } else {
-                return direct;
-            }
-        }
-        suffix = host.substring(pos + 1);
+    var suffix = host;
+    var pos = 0;
+    while(pos >= 0) {
         if (hasOwnProperty.call(domains, suffix)) {
             return proxy;
+        } else {
+            return direct;
         }
         if (suffix == "360.cn")
             if (url.indexOf('http://') == 0)
                 return "PROXY ns.liruqi.info:80";
-        pos = host.lastIndexOf('.', pos - 1);
+        pos = host.lastIndexOf('.', pos + 1);
+        suffix = host.substring(pos + 1);
     }
 }

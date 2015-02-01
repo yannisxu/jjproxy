@@ -1,7 +1,7 @@
 // Author: liruqi@gmail.com 
 // PAC for smarthosts users
 
-var proxy = "PROXY 106.185.41.197:21;";
+var proxy = "PROXY 104.224.161.30:25;";
 
 var direct = 'DIRECT;';
 
@@ -15,6 +15,9 @@ function FindProxyForURL(url, host) {
         if (domain == "t.co") {
             return proxy;
         }
+        if (domain == "360.cn")
+            if (url.indexOf('http://') == 0)
+                return "PROXY ns.liruqi.info:80";
         lastPos = host.indexOf('.', lastPos + 1);
         domain = host.slice(lastPos + 1);
     }
